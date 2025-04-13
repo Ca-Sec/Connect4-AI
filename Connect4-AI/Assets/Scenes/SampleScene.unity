@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -244,12 +244,12 @@ GameObject:
   - component: {fileID: 136029510}
   - component: {fileID: 136029509}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: WinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &136029508
 RectTransform:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -448,7 +448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 257974259}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColFive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &257974259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +807,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 717378387}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ResetBoard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &717378387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +940,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 901808598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColThree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &901808598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,6 +1393,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009932308}
   m_CullTransparentMesh: 1
+--- !u!114 &1040119760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4581561601517243845, guid: 7004005dc07dd37468fe5496a7143ee1, type: 3}
+  m_PrefabInstance: {fileID: 3452243417327316693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e413196ee892bc5458f0cb5bfba7514e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1058496958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,7 +1486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1058496961}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColSix
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1058496961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,7 +1619,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1158797033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1158797033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1681,7 +1752,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205608603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColSeven
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1205608603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1802,7 +1885,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1235501468}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1235501468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,7 +2152,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652779818}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1040119760}
+        m_TargetAssemblyTypeName: Board, Assembly-CSharp
+        m_MethodName: ColFour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652779818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,6 +2685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Board
       objectReference: {fileID: 0}
+    - target: {fileID: 4581561601517243845, guid: 7004005dc07dd37468fe5496a7143ee1, type: 3}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 136029509}
     - target: {fileID: 4581561601517243845, guid: 7004005dc07dd37468fe5496a7143ee1, type: 3}
       propertyPath: buttons.Array.data[0]
       value: 

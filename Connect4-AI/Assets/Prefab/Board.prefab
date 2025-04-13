@@ -243,6 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5071373485872558671}
   - component: {fileID: 6751429910705273082}
+  - component: {fileID: 4619453413108182977}
   - component: {fileID: 4581561601517243845}
   m_Layer: 0
   m_Name: Board
@@ -325,6 +326,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4619453413108182977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700061674136695716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222adf71a7208024e98782cf29e15d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 4581561601517243845}
+  maxDepth: 5
 --- !u!114 &4581561601517243845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +410,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  winText: {fileID: 0}
+  ai: {fileID: 4619453413108182977}
 --- !u!1 &920441604201053268
 GameObject:
   m_ObjectHideFlags: 0
