@@ -72,7 +72,8 @@ public class Board : MonoBehaviour
             case 1:
                 humanTurn = false;
                 ButtonColor(Color.yellow);
-                StartCoroutine(DelayedAIMove());
+                if (winner == 0)
+                    StartCoroutine(DelayedAIMove());
                 break;
             case 2:
                 humanTurn = true;
@@ -137,7 +138,7 @@ public class Board : MonoBehaviour
 
         if (isBoardFull)
         {
-            EndGame(0);
+            EndGame(3);
         }
     }
 
@@ -154,7 +155,7 @@ public class Board : MonoBehaviour
             case 2:
                 winText.text = "COMPUTER\nWINS!";
                 break;
-            default:
+            case 3:
                 winText.text = "DRAW!";
                 break;
         }
