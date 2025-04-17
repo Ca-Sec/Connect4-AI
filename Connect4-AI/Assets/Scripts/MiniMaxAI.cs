@@ -6,12 +6,14 @@ public class MiniMaxAI : MonoBehaviour
     public Board board;
     public int maxDepth = 5;
 
+    // Gets current board state and begins algorithm for move
     public void MakeAIMove()
     {
         int bestCol = GetBestMove(board.GetBoardState(), maxDepth);
         board.PlacePiece(bestCol, 2);
     }
 
+    // Looks for the best current move
     int GetBestMove(int[,] boardState, int depth)
     {
         int bestScore = int.MinValue;
@@ -38,6 +40,7 @@ public class MiniMaxAI : MonoBehaviour
         return bestCol;
     }
 
+    // Essence of a search engine of MiniMax
     int MiniMax(int[,] boardState, int depth, bool isMaximizing)
     {
         int winner = CheckWinner(boardState);
@@ -81,6 +84,7 @@ public class MiniMaxAI : MonoBehaviour
         }
     }
 
+    // Basic Heuristic
     int EvaluateBoard(int[,] boardState)
     {
         int score = 0;
@@ -99,6 +103,7 @@ public class MiniMaxAI : MonoBehaviour
         return score;
     }
 
+    // Helps generate valid moves
     int GetNextOpenRow(int[,] boardState, int col)
     {
         for (int y = 0; y < 6; y++)
@@ -109,6 +114,7 @@ public class MiniMaxAI : MonoBehaviour
         return -1;
     }
 
+    // Checks to see if the col is full or not
     bool IsFull(int[,] boardState)
     {
         for (int x = 0; x < 7; x++)
@@ -119,6 +125,7 @@ public class MiniMaxAI : MonoBehaviour
         return true;
     }
 
+    // Checks to see if this moves leads to a win for the designated player
     int CheckWinner(int[,] boardState)
     {
         int width = boardState.GetLength(0);

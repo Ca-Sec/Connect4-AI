@@ -34,6 +34,7 @@ public class Board : MonoBehaviour
         }
     }
 
+    // Sets button color
     private void ButtonColor(Color color)
     {
         foreach(Image i in buttons)
@@ -42,6 +43,7 @@ public class Board : MonoBehaviour
         }
     }    
 
+    // Updates visual of the board
     private void UpdateBoard(int col, int row, int player)
     {
         columns[col].cells[row].GetComponent<CellValue>().value = player;
@@ -86,6 +88,7 @@ public class Board : MonoBehaviour
         }
     }
 
+    // Checks to see if any player has currently won with the current state of the board
     private void CheckWin()
     {
         int width = boardState.GetLength(0);  // 7
@@ -142,6 +145,7 @@ public class Board : MonoBehaviour
         }
     }
 
+    // Ends the game based if the player won, computer won, or if it was a draw
     private void EndGame(int winningPlayer)
     {
         winner = winningPlayer;
@@ -160,7 +164,6 @@ public class Board : MonoBehaviour
                 break;
         }
 
-        // Optionally disable input or show UI
         foreach (Image i in buttons)
         {
             i.raycastTarget = false;
@@ -168,6 +171,7 @@ public class Board : MonoBehaviour
         ButtonColor(Color.gray);
     }
 
+    // Places a piece in the specified col for the designated player
     public void PlacePiece(int col, int player)
     {
         for (int i = 0; i < columns[col].cells.Count; i++)
@@ -181,12 +185,14 @@ public class Board : MonoBehaviour
         }
     }
 
+    // Makes the AI make a move
     IEnumerator DelayedAIMove()
     {
         yield return new WaitForSeconds(0.5f);
         ai.MakeAIMove();
     }
 
+    // Gives the current board state when called
     public int[,] GetBoardState()
     {
         return boardState;
